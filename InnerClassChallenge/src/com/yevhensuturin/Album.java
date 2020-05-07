@@ -51,6 +51,12 @@ public class Album {
             }
         }
 
+        public void addSong(Song song){
+            if(findSong(song.getTitle()) ==  null){
+                songList.add(song);
+            }
+        }
+
         private Song findSong(String title) {
             for (Song song : songList) {
                 if (song.getTitle().equals(title)) {
