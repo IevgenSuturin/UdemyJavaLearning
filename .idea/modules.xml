@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/InnerClassChallenge/InnerClassChallenge.iml" filepath="$PROJECT_DIR$/InnerClassChallenge/InnerClassChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" filepath="$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UdemyJavaLearning.iml" filepath="$PROJECT_DIR$/UdemyJavaLearning.iml" />
+    </modules>
+  </component>
+</project>
