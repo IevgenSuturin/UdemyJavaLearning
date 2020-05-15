@@ -3,14 +3,20 @@ package com.yevhensuturin;
 import java.util.HashSet;
 import java.util.Set;
 
-public final class HeavenlyBody {
+enum BodyType{
+    PLANET, MOON, STAR
+}
+
+public class HeavenlyBody {
     private final String name;
     private final double orbitalPeriod;
     private final Set<HeavenlyBody> satellites;
+    private final BodyType bodyType;
 
-    public HeavenlyBody(String name, double orbitalPeriod) {
+    public HeavenlyBody(String name, BodyType bodyType, double orbitalPeriod) {
         this.name = name;
         this.orbitalPeriod = orbitalPeriod;
+        this.bodyType = bodyType;
         this.satellites = new HashSet<>();
     }
 
@@ -18,11 +24,18 @@ public final class HeavenlyBody {
         return name;
     }
 
+    public BodyType getBodyType() {
+        return bodyType;
+    }
+
     public double getOrbitalPeriod() {
         return orbitalPeriod;
     }
 
     public boolean addMoon(HeavenlyBody moon){
+        if(this.bodyType == BodyType.PLANET && moon.bodyType != BodyType.MOON){
+            return false;
+        }
         return this.satellites.add(moon);
     }
 
@@ -31,15 +44,28 @@ public final class HeavenlyBody {
     }
 
     @Override
-    public boolean equals(Object obj){
+    public final boolean equals(Object obj){
         if(this == obj){
             return true;
         }
 
-        if(obj == null || obj.getClass() != this.getClass()){
-            return false;
+        if(obj instanceof HeavenlyBody){
+            HeavenlyBody theObject = (HeavenlyBody) obj;
+            if (this.name.equals(theObject.getName())){
+                return this.bodyType == theObject.getBodyType();
+            }
         }
 
-        return this.name.equals(((HeavenlyBody) obj).getName());
+        return false;
+    }
+
+    @Override
+    public final int hashCode() {
+        return this.name.hashCode() + this.bodyType.hashCode() + 57;
+    }
+
+    @Override
+    public String toString() {
+        return name + ": " + bodyType + ", "+ orbitalPeriod;
     }
 }
