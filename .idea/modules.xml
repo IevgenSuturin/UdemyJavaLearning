@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Exceptions/Exceptions.iml" filepath="$PROJECT_DIR$/Exceptions/Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/GenericClassChallenge/GenericClassChallenge.iml" filepath="$PROJECT_DIR$/GenericClassChallenge/GenericClassChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/InnerClassChallenge/InnerClassChallenge.iml" filepath="$PROJECT_DIR$/InnerClassChallenge/InnerClassChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InputOutput/InputOutput.iml" filepath="$PROJECT_DIR$/InputOutput/InputOutput.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" filepath="$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/SetAndHashSet/SetAndHashSet.iml" filepath="$PROJECT_DIR$/SetAndHashSet/SetAndHashSet.iml" />
       <module fileurl="file://$PROJECT_DIR$/SortedCollections/SortedCollections.iml" filepath="$PROJECT_DIR$/SortedCollections/SortedCollections.iml" />
