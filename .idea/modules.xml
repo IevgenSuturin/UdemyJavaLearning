@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/InputOutputNIO/InputOutputNIO.iml" filepath="$PROJECT_DIR$/InputOutputNIO/InputOutputNIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaNIO/JavaNIO.iml" filepath="$PROJECT_DIR$/JavaNIO/JavaNIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" filepath="$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Paths/Paths.iml" filepath="$PROJECT_DIR$/Paths/Paths.iml" />
       <module fileurl="file://$PROJECT_DIR$/SetAndHashSet/SetAndHashSet.iml" filepath="$PROJECT_DIR$/SetAndHashSet/SetAndHashSet.iml" />
       <module fileurl="file://$PROJECT_DIR$/SortedCollections/SortedCollections.iml" filepath="$PROJECT_DIR$/SortedCollections/SortedCollections.iml" />
       <module fileurl="file://$PROJECT_DIR$/UdemyJavaLearning.iml" filepath="$PROJECT_DIR$/UdemyJavaLearning.iml" />

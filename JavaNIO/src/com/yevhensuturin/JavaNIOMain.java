@@ -45,6 +45,7 @@ public class JavaNIOMain {
 
             binChannel.write(buffer);
 
+
             RandomAccessFile ra = new RandomAccessFile("data.dat", "rwd");
             FileChannel channel = ra.getChannel();
             ByteBuffer intBuffer = ByteBuffer.allocate(Integer.BYTES);
@@ -61,39 +62,52 @@ public class JavaNIOMain {
             intBuffer.flip();
 
 
-// Calculate all the staff positions
-            byte[] outputString = "Hello world!".getBytes();
-            long str1Pos = 0;
-            long newInt1Pos = outputString.length;
-            long newInt2Pos = newInt1Pos + Integer.BYTES;
-            byte[] outputString2 = "Nice to meet you".getBytes();
-            long str2Pos = newInt2Pos + Integer.BYTES;
-            long newInt3Pos = str2Pos + outputString2.length;
+            RandomAccessFile copyFile = new RandomAccessFile("datacopy.dat", "rw");
+            FileChannel copyChannel = copyFile.getChannel();
+            channel.position(0);
+//            long numTransferred = copyChannel.transferFrom(channel, 0 , channel.size());
+            long numTransferred = channel.transferTo(0, channel.size(), copyChannel);
+            System.out.println("NumTransfered = "+numTransferred);
 
-// Set data for in position
-            ByteBuffer newIntBuffer =  ByteBuffer.allocate(Integer.BYTES);
-            newIntBuffer.putInt(245);
-            newIntBuffer.flip();
-            binChannel.write(newIntBuffer, newInt1Pos);
+            copyChannel.close();
+            copyFile.close();
 
-            newIntBuffer.flip();
-            newIntBuffer.putInt(-987654);
-            newIntBuffer.flip();
-            binChannel.write(newIntBuffer, newInt2Pos);
 
-            newIntBuffer.flip();
-            newIntBuffer.putInt(1000);
-            newIntBuffer.flip();
-            binChannel.write(newIntBuffer, newInt3Pos);
 
-            buffer.flip();
-            buffer.put(outputString);
-            buffer.flip();
-            binChannel.write(buffer, str1Pos);
-
-            binChannel.write(ByteBuffer.wrap(outputString), str1Pos);
-            binChannel.write(ByteBuffer.wrap(outputString2), str2Pos);
-
+//
+//
+//// Calculate all the staff positions
+//            byte[] outputString = "Hello world!".getBytes();
+//            long str1Pos = 0;
+//            long newInt1Pos = outputString.length;
+//            long newInt2Pos = newInt1Pos + Integer.BYTES;
+//            byte[] outputString2 = "Nice to meet you".getBytes();
+//            long str2Pos = newInt2Pos + Integer.BYTES;
+//            long newInt3Pos = str2Pos + outputString2.length;
+//
+//// Set data for in position
+//            ByteBuffer newIntBuffer =  ByteBuffer.allocate(Integer.BYTES);
+//            newIntBuffer.putInt(245);
+//            newIntBuffer.flip();
+//            binChannel.write(newIntBuffer, newInt1Pos);
+//
+//            newIntBuffer.flip();
+//            newIntBuffer.putInt(-987654);
+//            newIntBuffer.flip();
+//            binChannel.write(newIntBuffer, newInt2Pos);
+//
+//            newIntBuffer.flip();
+//            newIntBuffer.putInt(1000);
+//            newIntBuffer.flip();
+//            binChannel.write(newIntBuffer, newInt3Pos);
+//
+//            buffer.flip();
+//            buffer.put(outputString);
+//            buffer.flip();
+//            binChannel.write(buffer, str1Pos);
+//
+//            binChannel.write(ByteBuffer.wrap(outputString), str1Pos);
+//            binChannel.write(ByteBuffer.wrap(outputString2), str2Pos);
 
 
 //            ByteBuffer readBuffer = ByteBuffer.allocate(100);
