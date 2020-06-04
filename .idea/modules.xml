@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/AbstractClassChallenge/AbstractClassChallenge.iml" filepath="$PROJECT_DIR$/AbstractClassChallenge/AbstractClassChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/Advanture/Advanture.iml" filepath="$PROJECT_DIR$/Advanture/Advanture.iml" />
       <module fileurl="file://$PROJECT_DIR$/AdventureRandom/AdventureRandom.iml" filepath="$PROJECT_DIR$/AdventureRandom/AdventureRandom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Counter/Counter.iml" filepath="$PROJECT_DIR$/Counter/Counter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Directories/Directories.iml" filepath="$PROJECT_DIR$/Directories/Directories.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exceptions/Exceptions.iml" filepath="$PROJECT_DIR$/Exceptions/Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/GenericClassChallenge/GenericClassChallenge.iml" filepath="$PROJECT_DIR$/GenericClassChallenge/GenericClassChallenge.iml" />
@@ -13,9 +14,12 @@
       <module fileurl="file://$PROJECT_DIR$/InputOutputNIO/InputOutputNIO.iml" filepath="$PROJECT_DIR$/InputOutputNIO/InputOutputNIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaNIO/JavaNIO.iml" filepath="$PROJECT_DIR$/JavaNIO/JavaNIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" filepath="$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Messages/Messages.iml" filepath="$PROJECT_DIR$/Messages/Messages.iml" />
       <module fileurl="file://$PROJECT_DIR$/Paths/Paths.iml" filepath="$PROJECT_DIR$/Paths/Paths.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" filepath="$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SetAndHashSet/SetAndHashSet.iml" filepath="$PROJECT_DIR$/SetAndHashSet/SetAndHashSet.iml" />
       <module fileurl="file://$PROJECT_DIR$/SortedCollections/SortedCollections.iml" filepath="$PROJECT_DIR$/SortedCollections/SortedCollections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/Threads.iml" filepath="$PROJECT_DIR$/Threads/Threads.iml" />
       <module fileurl="file://$PROJECT_DIR$/UdemyJavaLearning.iml" filepath="$PROJECT_DIR$/UdemyJavaLearning.iml" />
     </modules>
   </component>
