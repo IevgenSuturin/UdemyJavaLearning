@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/InputOutput/InputOutput.iml" filepath="$PROJECT_DIR$/InputOutput/InputOutput.iml" />
       <module fileurl="file://$PROJECT_DIR$/InputOutputNIO/InputOutputNIO.iml" filepath="$PROJECT_DIR$/InputOutputNIO/InputOutputNIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaNIO/JavaNIO.iml" filepath="$PROJECT_DIR$/JavaNIO/JavaNIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LambdaEmployees/LambdaEmployees.iml" filepath="$PROJECT_DIR$/LambdaEmployees/LambdaEmployees.iml" />
       <module fileurl="file://$PROJECT_DIR$/LambdaSorting/LambdaSorting.iml" filepath="$PROJECT_DIR$/LambdaSorting/LambdaSorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" filepath="$PROJECT_DIR$/LinckedListChallenge/LinckedListChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/Messages/Messages.iml" filepath="$PROJECT_DIR$/Messages/Messages.iml" />
