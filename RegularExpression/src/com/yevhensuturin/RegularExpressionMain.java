@@ -93,7 +93,7 @@ public class RegularExpressionMain {
             System.out.println("Occurrence " + count + " : " + matcher.start() + " to " + matcher.end());
         }
 
-        //*? locates the nearest </h2> group of symbols (turn * quantifier into a lazy quantifier)
+        //.*? locates the nearest </h2> group of symbols (turn * quantifier into a lazy quantifier)
         String h2GroupPattern = "(<h2>.*?</h2>)";
         Pattern groupPattern = Pattern.compile(h2GroupPattern);
         Matcher groupMatcher = groupPattern.matcher(htmlText);

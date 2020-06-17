@@ -33,5 +33,49 @@ public class RegularExpressionChallengeMain {
 
         String challenge7 = "abcd.135";
         System.out.println(challenge7.matches("^[A-z][a-z]+\\.\\d+$"));
+
+        String challenge8 = "abcd.135uvqz.7tzik.999";
+        Pattern challenge8Pattern = Pattern.compile("[A-Za-z]+\\.(\\d+)");
+        Matcher challenge8Matcher = challenge8Pattern.matcher(challenge8);
+        while(challenge8Matcher.find()){
+            System.out.println("Occurrence : " + challenge8Matcher.group(1));
+        }
+
+        String challenge9 = "abcd.135\tuvqz.7\ttzik.999\n";
+        Pattern challenge9Pattern = Pattern.compile("[A-Za-z]+\\.(\\d+)\\s");
+        Matcher challenge9Matcher = challenge9Pattern.matcher(challenge9);
+        while(challenge9Matcher.find()){
+            System.out.println("Occurrence : " + challenge9Matcher.start(1) + " : " + (challenge9Matcher.end(1)-1) );
+        }
+
+        String challenge11 = "{0, 2}, {0, 5}, {1, 3}, {2, 4}";
+        Pattern challenge11Pattern = Pattern.compile("(\\{)(.+?)(\\})");
+        Matcher challenge11Matcher = challenge11Pattern.matcher(challenge11);
+        while(challenge11Matcher.find()){
+            System.out.println("Occurrence : " + challenge11Matcher.group(2));
+        }
+
+        System.out.println("Challenge11a");
+        String challenge11a = "{0, 2}, {0, 5}, {1, 3}, {2, 4}, {x, y}, {5, 123}";
+        Pattern challenge11aPattern = Pattern.compile("(\\{)(\\d+, \\d+)(\\})");
+        Matcher challenge11aMatcher = challenge11aPattern.matcher(challenge11a);
+        while(challenge11aMatcher.find()){
+            System.out.println("Occurrence : " + challenge11aMatcher.group(2));
+        }
+
+        System.out.println("Challenge12");
+        String challenge12 ="11111";
+        System.out.println(challenge12.matches("[0-9]{5}"));
+        System.out.println(challenge12.matches("^\\d{5}$"));
+
+        System.out.println("Challenge13");
+        String challenge13 ="11111-1111";
+        System.out.println(challenge13.matches("^\\d{5}-\\d{4}$"));
+
+        System.out.println("Challenge14");
+        String challenge14 ="11111-1111";
+        String challenge14a ="11111";
+        System.out.println(challenge14.matches("^\\d{5}(-\\d{4})?$"));
+        System.out.println(challenge14a.matches("^\\d{5}(-\\d{4})?$"));
     }
 }
