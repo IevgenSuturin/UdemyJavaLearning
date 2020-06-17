@@ -24,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/PolitePersone/PolitePersone.iml" filepath="$PROJECT_DIR$/PolitePersone/PolitePersone.iml" />
       <module fileurl="file://$PROJECT_DIR$/PoliteWorkerNew/PoliteWorkerNew.iml" filepath="$PROJECT_DIR$/PoliteWorkerNew/PoliteWorkerNew.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" filepath="$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RegularExpression/RegularExpression.iml" filepath="$PROJECT_DIR$/RegularExpression/RegularExpression.iml" />
       <module fileurl="file://$PROJECT_DIR$/SetAndHashSet/SetAndHashSet.iml" filepath="$PROJECT_DIR$/SetAndHashSet/SetAndHashSet.iml" />
       <module fileurl="file://$PROJECT_DIR$/SortedCollections/SortedCollections.iml" filepath="$PROJECT_DIR$/SortedCollections/SortedCollections.iml" />
       <module fileurl="file://$PROJECT_DIR$/StarvationNew/StarvationNew.iml" filepath="$PROJECT_DIR$/StarvationNew/StarvationNew.iml" />
